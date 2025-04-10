@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfiguracionFragment">
+
+    <EditText
+        android:id="@+id/nombreTrabajadorEliminar"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/recuadro"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Nombre Trabajador"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:visibility="invisible"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EliminarTrabajadores" />
+
+    <Button
+        android:id="@+id/EliminarTrabajador"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#00BCD4"
+        android:text="Eliminar"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/nombreTrabajadorEliminar" />
+
+    <Button
+        android:id="@+id/EliminarTrabajadores"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#00BCD4"
+        android:text="Eliminar Trabajador"
+        android:textColor="@color/black"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AñadirTrabajadores" />
+
+    <Button
+        android:id="@+id/AñadirTrabajadores"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="#00BCD4"
+        android:text="Añadir Trabajador"
+        android:textColor="@color/black"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextContraseña" />
+
+    <TextView
+        android:id="@+id/textNombre"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="45dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editContraseña3" />
+
+    <TextView
+        android:id="@+id/editContraseña3"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="15dp"
+        android:drawablePadding="10dp"
+        android:text="Nombre:"
+        android:textColorHint="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Perfil" />
+
+    <ImageView
+        android:id="@+id/btnEditNombre"
+        android:layout_width="40dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/baseline_edit_24"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.314"
+        app:layout_constraintStart_toEndOf="@+id/textNombre"
+        app:layout_constraintTop_toTopOf="@+id/textNombre" />
+
+    <EditText
+        android:id="@+id/editNombre"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="45dp"
+        android:background="@drawable/recuadro"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/black"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editContraseña3" />
+
+    <ImageView
+        android:id="@+id/btnGuardarNombre"
+        android:layout_width="40dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/baseline_save_24"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintStart_toEndOf="@+id/textNombre"
+        app:layout_constraintTop_toBottomOf="@+id/editContraseña3" />
+
+    <TextView
+        android:id="@+id/editContraseña2"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="10dp"
+        android:text="Contraseña:"
+        android:textColorHint="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNombre" />
+
+    <ImageView
+        android:id="@+id/btnEditContraseña"
+        android:layout_width="40dp"
+        android:layout_height="42dp"
+        android:src="@drawable/baseline_edit_24"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toEndOf="@+id/TextContraseña"
+        app:layout_constraintTop_toBottomOf="@+id/editContraseña2" />
+
+    <TextView
+        android:id="@+id/TextContraseña"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="0dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editContraseña2" />
+
+    <EditText
+        android:id="@+id/editContraseña"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="45dp"
+        android:background="@drawable/recuadro"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/black"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editContraseña2" />
+
+    <ImageView
+        android:id="@+id/btnGuardarContraseña"
+        android:layout_width="40dp"
+        android:layout_height="42dp"
+        android:src="@drawable/baseline_save_24"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toEndOf="@+id/TextContraseña"
+        app:layout_constraintTop_toBottomOf="@+id/editContraseña2" />
+
+    <TextView
+        android:id="@+id/Perfil"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="40dp"
+        android:text="PERFIL"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
